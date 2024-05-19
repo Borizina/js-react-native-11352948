@@ -7,3 +7,16 @@ function procesArray(arr) {
         }
     })
 }
+
+
+
+//function to format an array of strings based on a processed array
+function formatArrayStrings(strArr, numArr) {
+    return strArr.map((str, index) => {
+        if (numArr[index] % 2 === 0) {
+            return str.toUpperCase();
+        } else {
+            return str.toLowerCase();
+        }
+    })
+}
